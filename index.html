@@ -5,6 +5,7 @@
 	<title>Dot Games</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta property="fb:app_id" content="1006652382744871">
 	<meta property="og:site_name" content="Dot Games">
 	<meta property="og:title" content="Game development">
 	<meta property="og:type" content="article">
@@ -70,5 +71,22 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1006652382744871',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 </html>
