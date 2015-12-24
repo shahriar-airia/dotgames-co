@@ -155,8 +155,8 @@ article header {
 }
 
 .item {
-	margin: 5rem auto;
-	max-width: 37.5rem;
+  margin: 5rem auto;
+  max-width: 37.5rem;
 }
 
 .buttons {
@@ -193,9 +193,9 @@ article header {
     content: '';
     display: block;
     height: 0;
-    padding-top: 42.8%;
+    padding-top: 31%;
     background-color: #fff;
-    background-size: 80%;
+    background-size: 12rem;
     background-position: center;
     background-repeat: no-repeat;
 }
