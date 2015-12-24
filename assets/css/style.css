@@ -174,30 +174,11 @@ article header {
     overflow: hidden;
 }
 
-.buttons a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30rem;
-  height: 30rem;
-  margin: -15rem 0 0 -15rem;
-  opacity: 0;
-  background: rgba(102, 91, 122, 0.42);
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .6s;
-  transition: transform .6s;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.buttons a:hover:after {
-  opacity: .15;
-  -webkit-transform: none;
-  transform: none;
+.buttons a:hover {
+    -webkit-animation: 1s jello both;
+    animation: 1s jello both;
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 .buttons a.apple-store {
@@ -265,5 +246,84 @@ article header {
       opacity: 1;
       -webkit-transform: none;
               transform: none;
+    }
+}
+
+
+@-webkit-keyframes jello {
+    11.1% {
+        -webkit-transform: none;
+        transform: none
+    }
+    22.2% {
+        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+        transform: skewX(-12.5deg) skewY(-12.5deg)
+    }
+    33.3% {
+        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+        transform: skewX(6.25deg) skewY(6.25deg)
+    }
+    44.4% {
+        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+        transform: skewX(-3.125deg) skewY(-3.125deg)
+    }
+    55.5% {
+        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+        transform: skewX(1.5625deg) skewY(1.5625deg)
+    }
+    66.6% {
+        -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+        transform: skewX(-.78125deg) skewY(-.78125deg)
+    }
+    77.7% {
+        -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+        transform: skewX(.390625deg) skewY(.390625deg)
+    }
+    88.8% {
+        -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+        transform: skewX(-.1953125deg) skewY(-.1953125deg)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes jello {
+    11.1% {
+        -webkit-transform: none;
+        transform: none
+    }
+    22.2% {
+        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+        transform: skewX(-12.5deg) skewY(-12.5deg)
+    }
+    33.3% {
+        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+        transform: skewX(6.25deg) skewY(6.25deg)
+    }
+    44.4% {
+        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+        transform: skewX(-3.125deg) skewY(-3.125deg)
+    }
+    55.5% {
+        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+        transform: skewX(1.5625deg) skewY(1.5625deg)
+    }
+    66.6% {
+        -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+        transform: skewX(-.78125deg) skewY(-.78125deg)
+    }
+    77.7% {
+        -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+        transform: skewX(.390625deg) skewY(.390625deg)
+    }
+    88.8% {
+        -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+        transform: skewX(-.1953125deg) skewY(-.1953125deg)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
     }
 }
