@@ -195,7 +195,8 @@ article header {
     height: 0;
     padding-top: 31%;
     background-color: #fff;
-    background-size: 12rem;
+    -ms-background-size: contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
